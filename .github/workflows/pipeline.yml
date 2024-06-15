@@ -10,8 +10,8 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Liberando o acesso
-              uses: actions/checkout
-              
+              uses: actions/checkout@v4
+
             - name: Instalando o NODE
               uses: actions/setup-node@v4
             
