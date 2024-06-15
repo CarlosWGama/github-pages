@@ -23,6 +23,8 @@ jobs:
     deploy:
         needs: teste
         runs-on: ubuntu-latest
+        permissions: 
+            contents: write
         steps:
             - name: Liberando acesso aos dados
               uses: actions/checkout@v4
