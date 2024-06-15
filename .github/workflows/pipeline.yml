@@ -9,9 +9,15 @@ jobs:
     teste:
         runs-on: ubuntu-latest
         steps:
-            - run: echo "Testando 123"
+            - name: Instalando o NODE
+              uses: actions/setup-node@v4
+            
+            - name: Testando o código
+              run: npm install 
+            - run: npm test
 
-    exemplo2:
+
+    deploy:
         needs: teste
         runs-on: ubuntu-latest
         steps:
