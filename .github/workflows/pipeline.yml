@@ -9,6 +9,9 @@ jobs:
     teste:
         runs-on: ubuntu-latest
         steps:
+            - name: Liberando o acesso
+              uses: actions/checkout
+              
             - name: Instalando o NODE
               uses: actions/setup-node@v4
             
