@@ -10,3 +10,8 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - run: echo "Testando 123"
+
+    exemplo2:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "Testando segunda job"
